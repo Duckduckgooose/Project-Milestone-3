@@ -1,0 +1,179 @@
+/* Styles */
+* {
+    /* Resetting the margin and padding */
+    margin: 0;
+    padding: 0;
+    /* Maintains consistent box size  */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Setting the fonts for the site */
+    background-color: #fcfdfd; /* White background color for the site */
+    color: #020101; /* Black text color */
+    line-height: 1.6; /* Line spacing for the text body */
+    margin: 0; /* Maintaining a zero margin for the body section */
+    min-height: 100vh; /* A minimum height so that the information is displayed is appropriately presented */
+    position: relative; /* The positioning for the section */ 
+}
+/* Removing the original text-decoration and maintains the set color */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Removes the bullet point style of listing */
+ul {
+    list-style-type: none;
+}
+
+/* Header and Navigation Style */
+header {
+    background-color: #0077b6;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Navigation menu configuration */
+nav ul {
+    display: flex; 
+    justify-content: center; /* Content center placement */
+    gap: 20px; /* Space between links */
+}
+/* Style for the links */
+nav ul li a {
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+/* Highlights the page links whenever the user's mouse is hovering over */
+nav ul li a:hover {
+    background-color: #023e8a; /* Darker blue background on hover */
+}
+/* Main Section Configuration*/ 
+main {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+}
+/* Styling for the heading */
+h1 {
+    font-size: 3rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+/* Paragraph section style */
+p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Contact Section Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1rem;
+    color: #0077b6;
+    text-align: left;
+    width: 100%;
+}
+/* Input and form texturing for the various fields */
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #0077b6;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f0f4f8;
+}
+/* The styling for the submit button */
+form button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* Highlights the submit button whenever the user's mouse is hovering over */
+form button:hover {
+    background-color: #023e8a;
+}
+/* Footer's text style for the site's establishment */
+footer {
+    background-color: #023e8a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    position:absolute;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+/* Define light theme colors in :root */
+:root {
+    --background-color: #fcfdfd; /* Light background */
+    --text-color: #020101;       /* Dark text color */
+    --header-color: #0077b6;     /* Header color */
+    --footer-color: #023e8a;     /* Footer color */
+}
+
+/* Use the variables in your elements */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header, nav ul li a {
+    background-color: var(--header-color);
+}
+
+footer {
+    background-color: var(--footer-color);
+}
+
+/* Dark theme overrides */
+.dark-theme {
+    --background-color: #181818; /* Dark background */
+    --text-color: #f5f5f5;       /* Light text color */
+    --header-color: #333333;     /* Dark header color */
+    --footer-color: #444444;     /* Dark footer color */
+}
+
+#theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: var(--header-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: var(--footer-color);
+}

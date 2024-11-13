@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- The header section listing the various links -->
+    <header>
+        <nav>
+            <ul>
+                <!-- Links to the other HTML Pages -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Button for toggling between light and dark mode-->
+    <button id="theme-toggle">Toggle Theme</button>
+
+    <main>
+        <!-- Heading for the Home Page -->
+        <h1>Welcome to the Home Page</h1>
+        <!-- Simple form section for username input -->
+        <form action="/submit-form" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer with copyright information -->
+    <footer>
+        <p>&copy; Gustavo's Website, Established 2024.</p>
+    </footer>
+    <!--Links HTML file to the Javascript document-->
+    <script src="Javascript.js"></script>
+</body>
+</html>
